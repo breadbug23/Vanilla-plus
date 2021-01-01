@@ -1,0 +1,16 @@
+name: Bridge Plastanium Conveyor
+type: StackConveyor
+description: "Simply a plastanium conveyor that can be placed on water, nothing more."
+requirements: 
+ [
+graphite/1
+silicon/1
+plastanium/2
+]
+health: 85
+speed: 0.06666
+itemCapacity: 10
+research: plastanium-conveyor
+category: distribution
+requiresWater: true
+placeableLiquid: true

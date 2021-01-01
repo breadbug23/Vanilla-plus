@@ -1,0 +1,19 @@
+type: Conduit
+name: Floating conduit
+
+description: "A conduit that can be placed on water."
+liquidCapacity: 16
+liquidPressure: 1.25
+health: 90
+displayFlow: true
+
+requirements: [
+    titanium/4
+    metaglass/2
+    lead/6
+]
+
+category: liquid
+research: pulse-conduit
+placeableLiquid: true
+requiresWater: true

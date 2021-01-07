@@ -1,0 +1,94 @@
+Type: UnitType
+name: kashi
+description: "fire a cluster missile, dealing high damage at short range, and moderate damage at long range. Got the ability to heal allied units and blocks."
+maxVelocity: 1.1
+speed: 0.85
+accel: 0.4
+drag: 0.12
+armor: 2
+rotatespeed: 3.3
+hitsize: 10
+health: 740
+trailLength: 20
+rotateShooting: false
+weapons: 
+  [
+    {
+    name: cluster-missile
+    shootSound: Sounds.missile
+    mirror: false
+    rotate: true
+	alternate: true
+    x: 0
+	y: 3
+    reload: 100
+    shots: 1
+    recoil: 3
+	inaccuracy: 15
+    bullet: {
+		type: MissileBulletType
+		homingPower: 0.1
+		weaveMag: 6
+		weaveScale: 4
+		lifetime: 160
+		speed: 0.7
+		keepVelocity: false
+		frontColor: ffffff
+		healPercent: 35
+		commandLimit: 6
+		damage: 45
+		collidesTeam: true
+		backColor: 84f491
+		trailColor: 84f491
+		fragBullets: 9
+		fragCone: 70
+		fragBullet: {
+			type: MissileBulletType
+			homingPower: 0.5
+			weaveMag: 3
+			weaveScale: 4
+			lifetime: 106
+			length: 2
+			width: 4
+			frontColor: ffffff
+			trailColor: 84f491
+			backColor: 84f491
+			speed: 3
+			healPercent: 3
+			damage: 7
+			collidesTeam: true
+				}
+			}
+		}
+	{
+	name: heal-weapon-mount
+	top: true
+	rotate: true
+	reload: 15
+	lifetime: 130
+	y: -3
+	x: 6
+	mirror: true
+	recoil: 2
+	shootSound: Sounds.lasershoot
+	bullet: {
+		type: LaserBoltBulletType
+		lifetime: 37
+		healPercent: 5
+		speed: 3
+		damage: 11
+		collidesTeam: true
+		backColor: 84f491
+		frontColor: ffffff
+			}
+		}
+	]
+research: {
+    parent: shige
+    requirements: [
+        {item: lead, amount: 4000}
+        {item: silicon, amount: 3500}
+		{item: titanium, amount: 3500}
+		{item: graphite, amount: 2000}
+	]
+}

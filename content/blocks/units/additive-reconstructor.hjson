@@ -1,0 +1,9 @@
+upgrades: [
+		[mono, poly]
+		[dagger, mace]
+		[nova, pulsar]
+		[crawler, atrax]
+		[flare, horizon]
+		[risso, minke]
+		[shige, kashi]
+	]

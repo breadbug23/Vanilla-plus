@@ -1,0 +1,20 @@
+{
+	plans: [{
+		unit: risso
+		time: 300
+		requirements: [
+			silicon/25
+			metaglass/30
+		]
+	}
+	{
+		unit: shige
+		time: 350
+		requirements: [
+			silicon/30
+			metaglass/20
+			lead/20
+		]
+	}
+	]
+}

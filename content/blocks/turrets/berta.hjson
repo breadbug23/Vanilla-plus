@@ -7,21 +7,21 @@ description: "Very, very long range artilery, with massive destruction capacitie
 requirements: [
 copper/1350
 graphite/500
-titanium/420
+plastanium/420
 silicon/350
-surge-alloy/400
+surge-alloy/500
 ]
 
 ammoTypes: {
 pyratite: {
 	bulletType: ArtileryBulletType
 	keepVelocity: false
-	lifetime: 100000
+	lifetime: 1000
 	speed: 500
+	ammoMultiplier: 1
 	wight: 8
 	length: 8
-	damage: 1000
-	splashDamage: 100
+	splashDamage: 300
 	splashDamageRadius: 60
 	fragBullets: 8
 	fragBullet: artilleryIncendiary
@@ -30,13 +30,13 @@ pyratite: {
 blast-compound: {
 	bulletType: ArtileryBulletType
 	keepVelocity: false
-	lifetime: 100000
+	lifetime: 1000
+	ammoMultiplier: 1
 	speed: 500
 	wight: 10
 	length: 10
-	damage: 1250
-	splashDamage: 150
-	splashDamageRadius: 65
+	splashDamage: 350
+	splashDamageRadius: 55
 	fragBullets: 10
 	fragBullet: artilleryExplosive
 	collidesGround: true
@@ -44,38 +44,40 @@ blast-compound: {
 surge-alloy: {
 	bulletType: ArtileryBulletType
 	keepVelocity: false
-	lifetime: 100000
+	lifetime: 10000
 	speed: 500
+	ammoMultiplier: 1
 	wight: 20
 	length: 20
-	damage: 1500
-	splashDamage: 300
+	splashDamage: 400
 	collidesGround: true
 	splashDamageRadius: 65
-	fragBullets: 50
+	fragBullets: 25
 	fragBullet: {
 		type: MissileBulletType
 		homingPower: 0.1
 		weaveMag: 4
 		weaveScale: 4
 		lifetime: 150
-		speed: 3
+		speed: 4
 		keepVelocity: false
 		frontColor: ffffff
-		damage: 100
+		damage: 75
 		backColor: f3e979
 		trailColor: f3e979
 		}
 	}
 }
-reloadTime: 1200
-range: 10000
+reloadTime: 3600
+range: 3200
 size: 4
 targetGround: true
+liquidCapacity: 0
+canOverdrive: false
 targetAir: false
 ammoEjectBack: 10
 recoilAmount: 8
-minRange: 50
+minRange: 400
 rotateSpeed: 1
 inaccuracy: 0
 shootCone: 0.00001

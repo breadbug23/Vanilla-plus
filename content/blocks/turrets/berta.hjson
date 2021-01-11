@@ -1,0 +1,84 @@
+type: ItemTurret
+
+name: Berta
+
+description: "Very, very long range artilery, with massive destruction capacities, and a massive reload time."
+
+requirements: [
+copper/1350
+graphite/500
+titanium/420
+lead/290
+surge-alloy/400
+]
+
+ammoTypes: {
+pyratite: {
+	bulletType: ArtileryBulletType
+	keepVelocity: false
+	lifetime: 100000
+	speed: 500
+	wight: 8
+	length: 8
+	damage: 1000
+	splashDamage: 100
+	splashDamageRadius: 60
+	fragBullets: 8
+	fragBullet: artilleryIncendiary
+	collidesGround: true
+	}
+blast-compound: {
+	bulletType: ArtileryBulletType
+	keepVelocity: false
+	lifetime: 100000
+	speed: 500
+	wight: 10
+	length: 10
+	damage: 1250
+	splashDamage: 150
+	splashDamageRadius: 65
+	fragBullets: 10
+	fragBullet: artilleryExplosive
+	collidesGround: true
+	}
+surge-alloy: {
+	bulletType: ArtileryBulletType
+	keepVelocity: false
+	lifetime: 100000
+	speed: 500
+	wight: 20
+	length: 20
+	damage: 1500
+	splashDamage: 300
+	collidesGround: true
+	splashDamageRadius: 65
+	fragBullets: 50
+	fragBullet: {
+		type: MissileBulletType
+		homingPower: 0.1
+		weaveMag: 4
+		weaveScale: 4
+		lifetime: 150
+		speed: 3
+		keepVelocity: false
+		frontColor: ffffff
+		damage: 100
+		backColor: f3e979
+		trailColor: f3e979
+		}
+	}
+}
+reloadTime: 1200
+range: 10000
+size: 4
+targetGround: true
+targetAir: false
+ammoEjectBack: 10
+recoilAmount: 8
+minRange: 50
+rotateSpeed: 1
+inaccuracy: 0
+shootCone: 0.00001
+health: 1500
+shootSound: explosionbig
+category: turret

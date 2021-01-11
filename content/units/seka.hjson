@@ -3,9 +3,15 @@ name: seka
 descrition: "Use a wave as a weapon, in addition to the electric bullets. Got the capacity to heal allied structures and units. Can overdrive"
 maxVelocity: 0.9
 speed: 0.8
+buildSpeed: 1.7
+canBoost: true
+boostMultiplier: 1.15
 accel: 0.1
+engineColor: 84f491
+engineOffset: 12
 drag: 0.1
-rotatespeed: 1
+commandLimit: 8
+rotateSpeed: 1.8
 hitsize: 15
 health: 950
 trailLength: 30
@@ -27,6 +33,7 @@ weapons:
     bullet: { 
 		type: BasicBulletType
 		lifetime: 52
+		shootSound: boom
 		speed: 2
 		keepVelocity: false
 		frontColor: ffffff
@@ -52,6 +59,7 @@ weapons:
 	name: electric-gun-middle
     shootSound: Sounds.missile
     mirror: false
+	shootSound: boom
     rotate: true
 	alternate: true
     x: 0
@@ -88,6 +96,7 @@ weapons:
 	name: electric-gun-middle
     shootSound: Sounds.missile
     mirror: false
+	shootSound: boom
     rotate: true
 	alternate: true
     x: 0
@@ -123,6 +132,7 @@ weapons:
 	{
 	name: wave-unit
 	top: true
+	shootSound: wave
 	rotate: true
 	reload: 3
 	lifetime: 120

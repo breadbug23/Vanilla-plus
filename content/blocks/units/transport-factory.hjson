@@ -1,0 +1,28 @@
+name: Transport factory
+type: UnitFactory
+description: "produce roombas. main use of them is the transport of resources."
+size: 1
+consumes:
+ {
+  power: 2
+}
+plans: 
+[
+{
+    unit: plastaniumroomba
+    requirements: 
+[
+      silicon/6
+      plastanium/6
+    ]
+    time: 350
+  }
+]
+requirements: 
+[
+  copper/50
+  lead/120
+  silicon/80
+]
+category: units
+research: ground-factory

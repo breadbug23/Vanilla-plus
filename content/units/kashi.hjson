@@ -5,8 +5,13 @@ maxVelocity: 1.1
 speed: 0.85
 accel: 0.4
 drag: 0.12
+engineOffset: 7.8
+engineColor: 84f491
+buildSpeed: 0.8
+canBoost: true
+boostMultiplier: 1.20
 armor: 2
-rotatespeed: 3.3
+rotateSpeed: 2.6
 hitsize: 10
 health: 740
 trailLength: 20
@@ -17,11 +22,13 @@ weapons:
     name: cluster-missile
     shootSound: Sounds.missile
     mirror: false
+	shootSound: boom
     rotate: true
 	alternate: true
     x: 0
 	y: 3
     reload: 100
+	commandLimit: 6
     shots: 1
     recoil: 3
 	inaccuracy: 15
@@ -35,7 +42,6 @@ weapons:
 		keepVelocity: false
 		frontColor: ffffff
 		healPercent: 35
-		commandLimit: 6
 		damage: 45
 		collidesTeam: true
 		backColor: 84f491
@@ -64,6 +70,7 @@ weapons:
 	name: heal-weapon-mount
 	top: true
 	rotate: true
+	shootSound: laser
 	reload: 15
 	lifetime: 130
 	y: -3

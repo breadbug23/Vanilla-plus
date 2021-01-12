@@ -9,11 +9,37 @@ consumes:
 plans: 
 [
 {
+    unit: siliconroomba
+    requirements: 
+[
+      silicon/6
+    ]
+    time: 350
+  }
+{
+    unit: graphiteroomba
+    requirements: 
+[
+      silicon/6
+      graphite/6
+    ]
+    time: 350
+  }
+{
     unit: plastaniumroomba
     requirements: 
 [
       silicon/6
       plastanium/6
+    ]
+    time: 350
+  }
+{
+    unit: surgeroomba
+    requirements: 
+[
+      silicon/6
+      surge-alloy/6
     ]
     time: 350
   }

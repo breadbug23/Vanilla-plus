@@ -1,12 +1,13 @@
 Type: legs
 name: Plastanium Roomba
-descrition: "A simple roomba that at got out of his conventionnal path. Using is for transport of resource is the only viable use."
+descrition: "A legged variant of the silicon roomba."
 maxVelocity: 1.3
 legCount: 4
 legMoveSpace: 1
 legLength: 8
 legSpeed: 0.6
 allowLegStep: true
+visualElevation: 0.3
 speed: 1.1
 hovering: true
 itemCapacity: 30

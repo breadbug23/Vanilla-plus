@@ -8,7 +8,7 @@ const surgeroomba = extendContent(UnitType, "surgeroomba", {
 surgeroomba.defaultController = () => new MinerAI()
 
 surgeroomba.constructor = () => { 
-    const unit = extend(Unit, {});
+    const unit = extend(UnitEntity, {});
 
     return unit
 }

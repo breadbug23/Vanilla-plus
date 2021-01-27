@@ -1,2 +1,3 @@
-const phasereweaver = extendContent(GenericCrafter,"phase-reweaver",{});
-phasereweaver.drawer = new DrawWeave();
+const phasereweaver = extend(GenericCrafter, "phasereweaver", {
+    drawer: extend(DrawWeave, {})
+});

@@ -1,0 +1,25 @@
+{
+	plans: [{
+		unit: flare
+		time: 350
+		requirements: [
+			silicon/15
+		]
+	}
+	{
+		unit: zapper
+		time: 250
+		requirements: [
+			silicon/30
+			surge-alloy/5
+		]
+	}
+	{
+		unit: mono
+		time: 300
+		requirements: [
+			silicon/30
+			lead/15
+		]
+	}]
+}

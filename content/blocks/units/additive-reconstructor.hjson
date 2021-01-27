@@ -6,4 +6,5 @@ upgrades: [
 		[flare, horizon]
 		[risso, minke]
 		[shige, kashi]
+		[zapper, taser]
 	]

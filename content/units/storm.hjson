@@ -1,0 +1,49 @@
+Type: flying
+name: Storm
+description: "Fire a countinuous storm of electricity."
+maxVelocity: 0.5
+speed: 0.45
+flying: true
+visualElevation: 0.50
+rotateSpeed: 1.3
+hitsize: 22
+engineSize: 0
+health: 21500
+armor: 16
+commandLimit: 10
+weapons: 
+  [
+    {
+        name: sto
+        top: true
+        reload: 5
+        shots: 10
+        inaccuracy: 180
+        spacing: 0
+		x: 0
+		y: 0
+		rotate: true
+		rotateSpeed: 100
+		mirror: false
+        ejectEffect: none
+        shootSound: spark
+        bullet: {
+            type: LightningBulletType
+            damage: 50
+            lightningLength: 16
+            lightningLengthRand: 14
+            lightningColor: bf92f9
+            lightning: 25
+        }
+		}
+	]
+research: {
+    parent: thunder
+    requirements:
+    [
+        {item: lead, amount: 99000},
+        {item: phase-fabric, amount: 31000}
+		{item: surge-alloy, amount: 46000}
+		{item: plastanium, amount: 56000}
+    ]
+}

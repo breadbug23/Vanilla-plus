@@ -6,4 +6,5 @@ upgrades: [
 		[horizon, zenith]
 		[minke, bryde]
 		[kashi, seka]
+		[taser, lightning]
 	]

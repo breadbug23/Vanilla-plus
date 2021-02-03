@@ -6,4 +6,3 @@ const zapper = extend(UnitType, "zapper", {
 	}
 });
 zapper.constructor = () => extend(UnitEntity, {});
-zapper.defaultController = () => extend(SuicideAI, {});
